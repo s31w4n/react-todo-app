@@ -6,12 +6,12 @@
 	padding: 0;
 }
 :root {
-	--primaryPurple: #646ff0;
+	--primaryPurple: #497174;
 	--black-1: #646681;
 	--black-2: #585858;
-	--bg-1: #f8f8ff;
-	--bg-2: #ecedf6;
-	--bg-3: #cccdde;
+	--bg-1: #EFF5F5;
+	--bg-2: #D6E4E5;
+	--bg-3: #838a8a;
 	--gray-1: #eee;
 	--gray-2: #dedfe1;
 	--black: black;

@@ -19,14 +19,14 @@ function AppHeader() {
     <div className={styles.app_header}>
       <Button
         type="button"
-        variant="secondary"
+        variant="primary"
         onClick={() => setModalOpen(true)}
       >
         Add Task
       </Button>
       <SelectButton id="status" value={filterStatus} onChange={updateFilter}>
         <option value="all">All</option>
-        <option value="incomplete">incomplete</option>
+        <option value="active">active</option>
         <option value="complete">complete</option>
       </SelectButton>
       <TodoModal type="add" modalOpen={modalOpen} setModalOpen={setModalOpen} />

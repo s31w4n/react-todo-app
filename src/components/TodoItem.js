@@ -41,9 +41,7 @@ function TodoItem({ todo }) {
   };
 
   const handleCheck = () => {
-    dispatch(
-      editTodo({ ...todo, status: checked ? "incomplete" : "complete" })
-    );
+    dispatch(editTodo({ ...todo, status: checked ? "active" : "complete" }));
     setChecked(!checked);
   };
 
@@ -62,7 +60,7 @@ function TodoItem({ todo }) {
               {todo.title}
             </p>
             <p className={styles.time}>
-              {format(new Date(todo.time), "p, MM/dd/yyyy")}
+              {format(new Date(todo.time), "EEEE, do, MM/yyyy, p")}
             </p>
           </div>
         </div>

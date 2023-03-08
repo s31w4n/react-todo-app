@@ -11,14 +11,16 @@
 	cursor: pointer;
 	overflow: hidden;
 	&_select {
-		color: var(--black-2);
-		font-family: Poppins;
+		color: var(--black-1);
+		font-family: 'Poppins', sans-serif;
 		padding: 1rem;
 		border: none;
-		background-color: var(--bg-3);
-
+		background-color: var(--bg-2);
 		width: 150px;
 		cursor: pointer;
+	}
+	&:hover {
+		opacity: 0.9;
 	}
 }
 .button-primary {
@@ -27,5 +29,5 @@
 }
 .button-secondary {
 	background-color: var(--bg-3);
-	color: var(--black-1);
+	color: var(--white);
 }
