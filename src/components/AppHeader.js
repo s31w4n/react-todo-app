@@ -16,7 +16,7 @@ function AppHeader() {
   };
 
   return (
-    <div className={styles.appHeader}>
+    <div className={styles.app_header}>
       <Button
         type="button"
         variant="secondary"

@@ -92,7 +92,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
             exit="exit"
           >
             <div
-              className={styles.closeButton}
+              className={styles.close_button}
               onClick={() => setModalOpen(false)}
               onKeyDown={() => setModalOpen(false)}
               tabIndex={0}
@@ -104,7 +104,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
               className={styles.form}
               onSubmit={(event) => handleSubmit(event)}
             >
-              <h1 className={styles.formTitle}>
+              <h1 className={styles.form_title}>
                 {type === "edit" ? "Edit" : "Add"} Task
               </h1>
               <label htmlFor="title">
@@ -128,7 +128,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                   <option value="complete">Complete</option>
                 </select>
               </label>
-              <div className={styles.buttonContainer}>
+              <div className={styles.button_container}>
                 <Button type="submit" variant="primary">
                   {type === "edit" ? "Edit" : "Add"} Task
                 </Button>

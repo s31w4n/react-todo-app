@@ -1,17 +1,19 @@
-@import '../mixins';
+@import "../mixins";
 .title {
-	display: inline-block;
-	width: 100%;
-	font-family: 'Poppins';
-	font-size: 4rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 0 auto;
-	margin-top: 2rem;
-	margin-bottom: 1.5rem;
-	color: var(--black-1);
-	@include smallDeviceSize {
-		font-size: 3rem;
-	}
+  display: inline-block;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 10000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  background-color: #00dbde;
+  background-image: linear-gradient(0deg, #00dbde 0%, #fc00ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include smallDeviceSize {
+    font-size: 3rem;
+  }
 }

@@ -13,7 +13,7 @@ function Button({ children, type, variant, ...rest }) {
       type={type}
       className={getClasses([
         styles.button,
-        styles[`button--${buttonType[variant]}`],
+        styles[`button-${buttonType[variant]}`],
       ])}
       {...rest}
     >
@@ -26,7 +26,7 @@ function SelectButton({ children, id, ...rest }) {
   return (
     <select
       id={id}
-      className={getClasses([styles.button, styles.button__select])}
+      className={getClasses([styles.button, styles.button_select])}
       {...rest}
     >
       {children}

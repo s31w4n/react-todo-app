@@ -38,7 +38,7 @@ function AppContent() {
 
   return (
     <motion.div
-      className={styles.content__wrapper}
+      className={styles.content_wrapper}
       variants={container}
       initial="hidden"
       animate="visible"
@@ -47,7 +47,7 @@ function AppContent() {
         {filteredTodoList.length > 0 ? (
           filteredTodoList.map((todo) => <TodoItem key={todo.id} todo={todo} />)
         ) : (
-          <motion.p className={styles.emptyText} variants={child}>
+          <motion.p className={styles.empty_text} variants={child}>
             no todo found
           </motion.p>
         )}

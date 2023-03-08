@@ -50,13 +50,13 @@ function TodoItem({ todo }) {
   return (
     <>
       <motion.div className={styles.item} variants={child}>
-        <div className={styles.todoDetails}>
+        <div className={styles.todo_details}>
           <CheckButton checked={checked} handleCheck={handleCheck} />
           <div className={styles.texts}>
             <p
               className={getClasses([
-                styles.todoText,
-                todo.status === "complete" && styles["todoText--completed"],
+                styles.todo_text,
+                todo.status === "complete" && styles["todo_text_completed"],
               ])}
             >
               {todo.title}
@@ -66,7 +66,7 @@ function TodoItem({ todo }) {
             </p>
           </div>
         </div>
-        <div className={styles.todoActions}>
+        <div className={styles.todo_actions}>
           <div
             className={styles.icon}
             onClick={handleDelete}

@@ -1,5 +1,9 @@
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
 @mixin smallDeviceSize {
-	@media only screen and (max-width: 768px) {
-		@content;
-	}
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
 }
