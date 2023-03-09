@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { format } from "date-fns";
-import styles from "../styles/modules/todoItem.module.scss";
-import { getClasses } from "../utils/getClasses";
-import { MdDelete, MdEdit } from "react-icons/md";
-import { deleteTodo, editTodo } from "../features/todo/todoSlice";
 import { useDispatch } from "react-redux";
-import { toast } from "react-hot-toast";
+import { format } from "date-fns";
 import TodoModal from "./TodoModal";
 import CheckButton from "./CheckButton";
+import { toast } from "react-hot-toast";
 import { motion } from "framer-motion";
+import { getClasses } from "../utils/getClasses";
+import { deleteTodo, editTodo } from "../features/todo/todoSlice";
+import { MdDelete, MdEdit } from "react-icons/md";
+import styles from "../styles/modules/todoItem.module.scss";
 
 const child = {
   hidden: { y: 20, opacity: 0 },

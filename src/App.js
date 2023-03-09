@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <div className="container">
-        <PageTitle children={"ToDo List"} />
         <div className={styles.app_wrapper}>
+          <PageTitle children={"ToDo List"} />
           <AppHeader />
           <AppContent />
         </div>
