@@ -12,5 +12,8 @@
   color: var(--black-1);
   @include smallDeviceSize {
     font-size: 3rem;
+    width: 80%;
+    margin-left: 10%;
+
   }
 }
