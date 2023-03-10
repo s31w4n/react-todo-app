@@ -1,14 +1,15 @@
 @import "../mixins";
+.header {
+}
 .title {
   display: inline-block;
-  width: 100%;
-  margin: 0 auto;
+  width: 90%;
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
   margin-top: 3rem;
+  margin-left: 5%;
   margin-bottom: 1.5rem;
   color: var(--black-1);
   @include smallDeviceSize {

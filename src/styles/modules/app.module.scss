@@ -4,6 +4,7 @@
   max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 .app_header {
   display: flex;
@@ -13,6 +14,9 @@
 }
 .content_wrapper {
   background-color: var(--bg-2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 2rem;
   border-radius: 12px;
   @include smallDeviceSize {

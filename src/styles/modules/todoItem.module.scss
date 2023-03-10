@@ -3,14 +3,10 @@
 .item {
   display: flex;
   width: 100%;
-  margin-bottom: 1.5rem;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
   background: var(--white);
-  &:last-child {
-    margin-bottom: 0;
-  }
   border-radius: 4px;
 }
 .todo_details_wrapper {
@@ -80,7 +76,7 @@
   font-size: 2rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: var(--gray-1);
+  background-color: var(--bg-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +89,6 @@
     color: #f04040;
   }
   &:last-child {
-    color: #d3bd1b;
+    color: #fbbb05;
   }
 }
