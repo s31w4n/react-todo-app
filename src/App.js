@@ -1,18 +1,18 @@
 import React from "react";
-import PageTitle from "./components/PageTitle";
-import AppHeader from "./components/AppHeader";
-import styles from "./styles/modules/app.module.scss";
-import AppContent from "./components/AppContent";
 import { Toaster } from "react-hot-toast";
+import Title from "./components/Title";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import styles from "./styles/modules/app.module.scss";
 
 function App() {
   return (
     <>
       <div className="container">
         <div className={styles.app_wrapper}>
-          <PageTitle children={"ToDo List"} />
-          <AppHeader />
-          <AppContent />
+          <Title children={"ToDo List"} />
+          <Header />
+          <Content />
         </div>
       </div>
       <Toaster
