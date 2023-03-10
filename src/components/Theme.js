@@ -10,7 +10,7 @@ const Theme = () => {
 
   useEffect(() => {
     document.body.dataset.darkMode = darkMode;
-    localStorage.setItem("darkMode", darkMode);
+    localStorage.setItem("darkMode", JSON.parse(darkMode));
   }, [darkMode]);
 
   const handleChange = () => {

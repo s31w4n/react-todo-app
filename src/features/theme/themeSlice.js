@@ -2,14 +2,17 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const getTheme = () => {
   let darkMode = window.localStorage.getItem("darkMode");
-  if (!darkMode) {
-    window.localStorage.setItem("darkMode", (darkMode = false));
+  if (darkMode === null) {
+    darkMode = false;
   }
-  return darkMode;
+  if (!darkMode) {
+    window.localStorage.setItem("darkMode", darkMode);
+  }
+  return JSON.parse(darkMode);
 };
 
 const initialState = {
-  darkMode: getTheme(),
+  darkMode: getTheme() || false,
 };
 
 export const themeSlice = createSlice({
