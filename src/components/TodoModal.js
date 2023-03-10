@@ -114,6 +114,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                   id="title"
                   value={title}
                   onChange={(event) => setTitle(event.target.value)}
+                  autoFocus
                 />
               </label>
               <label htmlFor="status">

@@ -1,8 +1,13 @@
+@import "../mixins";
+
 .theme_btn {
-    height: 30px;
-    width: 5%;
+  height: 30px;
+  width: 5%;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  @include smallDeviceSize {
     font-size: 3rem;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+  }
 }

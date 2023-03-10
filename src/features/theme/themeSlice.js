@@ -12,7 +12,7 @@ const getTheme = () => {
 };
 
 const initialState = {
-  darkMode: getTheme() || false,
+  darkMode: getTheme(),
 };
 
 export const themeSlice = createSlice({
