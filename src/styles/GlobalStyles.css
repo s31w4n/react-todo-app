@@ -39,6 +39,7 @@ body[data-dark-mode="true"] {
 body {
   background: var(--background-color);
   color: var(--text-color);
+  transition: all 0.3s linear;
 }
 html {
   font-size: 10px;
