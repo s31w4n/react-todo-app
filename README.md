@@ -8,8 +8,8 @@ In this project, the crud operation is implemented completely.
 
 ##### Screenshots
 
-![Light theme screenshot](./src/assets/Light%20Theme.png)
-![Dark theme screenshot](./src/assets/Dark%20Theme.png)
+ ![Light theme screenshot](./assets/Light%20Theme.png "title-1") | ![Dark theme screenshot](./assets/Dark%20Theme.png "title-2") 
+---------------- | ---------------- 
 
 ##### Technologies Used
 
