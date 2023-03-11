@@ -46,33 +46,40 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title === "") {
+    if (!title.trim()) {
       toast.error("Please enter a title");
       return;
     }
-    if (title && status) {
-      if (type === "add") {
-        dispatch(
-          addTodo({
-            id: uuid(),
-            title,
-            status,
-            time: new Date().toLocaleString(),
-          })
-        );
-        toast.success("Task added successfully");
-      }
-      if (type === "edit") {
-        if (todo.title !== title || todo.status !== status) {
-          dispatch(editTodo({ ...todo, title, status }));
-          toast.success("Task Updated successfully");
-        } else {
-          toast.error("No changes made");
-          return;
-        }
-      }
-      setModalOpen(false);
+
+    if (type === "add") {
+      dispatch(
+        addTodo({
+          id: uuid(),
+          title: title.trim(),
+          status,
+          time: new Date().toLocaleString(),
+        })
+      );
+      toast.success("Task added successfully");
     }
+
+    if (type === "edit") {
+      const updatedTodo = {
+        ...todo,
+        title: title.trim(),
+        status,
+      };
+
+      if (JSON.stringify(updatedTodo) === JSON.stringify(todo)) {
+        toast.error("No changes made");
+        return;
+      }
+
+      dispatch(editTodo(updatedTodo));
+      toast.success("Task updated successfully");
+    }
+
+    setModalOpen(false);
   };
 
   return (

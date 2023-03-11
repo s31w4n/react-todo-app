@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="container">
         <div className={styles.app_wrapper}>
-          <Title children={"ToDo List"} />
+          <Title />
           <Header />
           <Content />
         </div>
