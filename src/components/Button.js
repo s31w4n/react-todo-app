@@ -1,5 +1,4 @@
 import React from "react";
-import { getClasses } from "../utils/getClasses";
 import styles from "../styles/modules/button.module.scss";
 
 const buttonType = {
@@ -11,10 +10,7 @@ function Button({ children, type, variant, ...rest }) {
   return (
     <button
       type={type}
-      className={getClasses([
-        styles.button,
-        styles[`button-${buttonType[variant]}`],
-      ])}
+      className={`${styles.button} ${styles[`button-${buttonType[variant]}`]}`}
       {...rest}
     >
       {children}
@@ -26,7 +22,7 @@ function SelectButton({ children, id, ...rest }) {
   return (
     <select
       id={id}
-      className={getClasses([styles.button, styles.button_select])}
+      className={`${styles.button} ${styles.button_select}`}
       {...rest}
     >
       {children}

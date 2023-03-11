@@ -5,7 +5,6 @@ import TodoModal from "./TodoModal";
 import CheckButton from "./CheckButton";
 import { toast } from "react-hot-toast";
 import { motion } from "framer-motion";
-import { getClasses } from "../utils/getClasses";
 import { deleteTodo, editTodo } from "../features/todo/todoSlice";
 import { MdDelete, MdEdit } from "react-icons/md";
 import styles from "../styles/modules/todoItem.module.scss";
@@ -52,10 +51,9 @@ function TodoItem({ todo }) {
           <CheckButton checked={checked} handleCheck={handleCheck} />
           <div className={styles.texts}>
             <p
-              className={getClasses([
-                styles.todo_text,
-                todo.status === "complete" && styles["todo_text_completed"],
-              ])}
+              className={`${styles.todo_text} ${
+                todo.status === "complete" && styles.todo_text_completed
+              }`}
             >
               {todo.title}
             </p>
